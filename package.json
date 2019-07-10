@@ -1,0 +1,27 @@
+{
+  "name": "terminal.js",
+  "version": "1.0.0",
+  "description": "Javascript Terminal implementation",
+  "repository": "git@git.delta-wings.net:Avior/terminal.js.git",
+  "author": "Avior <florian.bouillon@delta-wings.net>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch": "webpack --watch --mode='development'",
+    "build:prod": "webpack --mode='production'",
+    "build:dev": "webpack --colors --mode='development'"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
