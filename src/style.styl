@@ -1,0 +1,86 @@
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+
+colorometry($name, $dark, $color, $light)
+	.{$name}
+		color: $color
+		&::selection
+			background: $color
+			color: #181818
+		&.light
+			color: $light
+			&::selection
+				background: $light
+		&.dark
+			color: $dark
+			&::selection
+				background: $dark
+
+.template
+	display none
+
+.terminal
+	font-family: 'Source Code Pro', monospace
+	height: calc(100% - 42px)
+	width: calc(100% - 42px)
+	background: #333333
+	padding: 21px
+	overflow-y: auto
+	word-wrap: break-word
+	margin: auto
+	font-size: 25px
+
+	colorometry("red", #D32F2F, #F44336, #E57373)
+	colorometry("yellow", #FBC02D, #FFEB3B, #FFF176)
+	colorometry("orange", #F57C00, #FF9800, #FFB74D)
+	colorometry("purple", #7B1FA2, #9C27B0, #BA68C8)
+	colorometry("green", #388E3C, #4CAF50, #81C784)
+	colorometry("blue", #1976D2, #2196F3, #64B5F6)
+	colorometry("grey", #616161, #9E9E9E, #E0E0E0)
+
+
+	.italic
+		font-style: italic
+
+	.underline
+		text-decoration: underline
+
+	.bold
+		font-weight: 700
+
+	.debug:before
+		content: "[Debug] "
+
+	div::selection
+		color #181818
+		background: #ffffff
+
+	.action
+
+		.command
+			width: 100%
+			font-weight: 700
+
+		.text
+			font-weight: 700
+			outline: none //chrome
+
+			//Fix line starting a the left of screens
+			margin-left: 1px
+
+		.output
+			color: white
+			font-weight: 300
+			margin-left: 20px
+
+			div
+				margin: 0
+
+				&.pre
+					height: initial
+
+
+pre
+	margin: 0

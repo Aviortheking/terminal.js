@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		title Terminal
+		link(rel='stylesheet', href='./src/style.styl')
+	body
+		.template.output.output-line
+		.template.action
+			.command
+				span.folder.green.light /
+				span.symbol.blue $
+				span.text.active.red.light(contenteditable='true')
+		.terminal
+	script(src='./src/index.ts')

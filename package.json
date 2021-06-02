@@ -1,17 +1,23 @@
 {
-  "name": "terminal.js",
-  "version": "1.0.0",
-  "description": "Javascript Terminal implementation",
-  "repository": "git@git.delta-wings.net:Avior/terminal.js.git",
-  "author": "Avior <florian.bouillon@delta-wings.net>",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "tsc",
-    "build": "gulp build"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "typescript": "^3.7.5"
-  }
+	"name": "terminal.js",
+	"version": "1.0.0",
+	"description": "Javascript Terminal implementation",
+	"repository": "git@git.delta-wings.net:Avior/terminal.js.git",
+	"author": "Avior <florian.bouillon@delta-wings.net>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "parcel index.pug",
+		"dev-module": "tsc -w",
+		"build": "gulp build"
+	},
+	"devDependencies": {
+		"parcel": "^1.12.4",
+		"pug": "^3.0.0",
+		"stylus": "^0.54.8"
+	},
+	"dependencies": {
+		"@dzeio/dom-manager": "^1.0.0",
+		"typescript": "^3.7.5"
+	}
 }

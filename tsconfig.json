@@ -1,11 +1,13 @@
 {
-	"files": ["src/index.ts"],
+	"include": ["modules", "src"],
 	"compilerOptions": {
-		"outDir": "build/js/",
+		"outDir": "dist",
 		"noImplicitAny": true,
-		"module": "AMD",
+		"lib": ["ES2015", "DOM"],
+		"module": "CommonJS",
 		"target": "es3",
 		"jsx": "preserve",
-		"allowJs": false
+		"allowJs": true,
+		"checkJs": true
 	}
-  }
+}
